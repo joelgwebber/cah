@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cards Against Humanity</title>
+  <link rel='stylesheet' href='/s/cah.css'/>
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0"/>
+</head>
+
+<body>
+  <form id="JoinView" class="JoinView view">
+    <div><input type="text" class="name" placeholder="hello, my name is ____"></div>
+    <div><input type="submit" class="go" value="go"></div>
+  </form>
+
+  <div id="PlayView" class="PlayView view">
+    <div class="black"></div>
+    <div class="whites"></div>
+  </div>
+
+  <div id="CzarView" class="CzarView view">
+    <div class="czar">Pick the most awful <button class="cancel">cancel</button></div>
+    <div class="black"></div>
+    <div class="whites"></div>
+  </div>
+
+  <div id="PlayersView" class="PlayersView">
+  </div>
+
+  <div id="PlayerView" class="PlayerView" style="display:none">
+    <span class="played"></span> / <span class="name"></span> / <span class="score"> / </span>
+  </div>
+
+  <button id="ResetButton" class="ResetButton">Reset</button>
+  <button id="CzarButton" class="CzarButton">Czar!</button>
+
+  <div id="wait"></div>
+  <script src='/s/cah.js'></script>
+</body>
+</html>

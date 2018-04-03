@@ -1,0 +1,131 @@
+html {
+}
+
+body {
+  overflow-y: auto;
+  margin: 0;
+  padding: 0;
+
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 18px;
+}
+
+.view {
+  display: none;
+}
+
+.JoinView {
+  position: absolute;
+  left: 0; top: 0; right: 0; bottom: 0;
+  background-color: white;
+  z-index: 3;
+  text-align: center;
+
+  .name {
+    font-size: 24px;
+  }
+
+  .go {
+    display: inline-block;
+    width: 64px;
+    height: 64px;
+  }
+}
+
+.PlayView {
+  .black {
+    position: fixed;
+    left: 0; right: 0;
+    top: 0; height: 128px;
+  }
+
+  .whites {
+    margin-top: 150px;
+  }
+}
+
+.CzarButton {
+  position: fixed;
+  width: 64px;
+  height: 64px;
+  bottom: 4px;
+  right: 28px;
+  z-index: 2;
+}
+
+.ResetButton {
+  position: fixed;
+  width: 64px;
+  height: 64px;
+  bottom: 72px;
+  right: 28px;
+  z-index: 2;
+}
+
+.CzarView {
+  z-index: 3;
+  background: white;
+  position: absolute;
+  left: 0; right: 0;
+  top: 0; bottom: 0;
+
+  .czar {
+    position: fixed;
+    left: 0; right: 0;
+    top: 0; height: 32px;
+    background: white;
+  }
+
+  .black {
+    position: fixed;
+    left: 0; right: 0;
+    top: 32px; height: 128px;
+  }
+
+  .whites {
+    margin-top: 180px;
+  }
+}
+
+.PlayersView {
+  position: fixed;
+  overflow-y: auto;
+  right: 0; width: 128px; top: 0; bottom: 0;
+  background-color: lightgray;
+  border-radius: 4px;
+
+  .player {
+  }
+}
+
+.Card {
+  border-radius: 4px;
+  height: 128px;
+  padding: 8px;
+  border: 1px solid black;
+  margin: 2px;
+  margin-right: 130px;
+  font-weight: bold;
+
+  &.black {
+    background-color: #222;
+    color: #eee;
+  }
+
+  &.white {
+    background-color: #eee;
+    color: #222;
+  }
+
+  &.selected {
+    background-color: lightblue;
+  }
+}
+
+#wait {
+  position: fixed;
+  left: 0; right: 0;
+  top: 0; bottom: 0;
+  display: none;
+  background: url(/s/spinner.gif) no-repeat 50% 50%;
+}
